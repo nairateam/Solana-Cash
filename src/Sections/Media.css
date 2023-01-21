@@ -1,0 +1,30 @@
+.media_wrap{
+    padding: 0;
+}
+
+.parallax {
+    overflow: hidden;
+    letter-spacing: -2px;
+    line-height: 0.8;
+    margin: 2rem auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background: #232325;
+  }
+
+.sc_media{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 64px;
+    gap: 2rem;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+.sc_media > img{
+    max-width: 150px;
+}

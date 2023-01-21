@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import Blockchain from './Sections/Blockchain';
+import Chart from './Sections/Chart';
+import Dapp from './Sections/Dapp';
+import Ecosystem from './Sections/Ecosystem';
+import Features from './Sections/Features';
+import Footer from './Sections/Footer';
+import Hero from './Sections/Hero';
+import Media from './Sections/Media';
+import Nav from './Sections/Nav';
+import Partners from './Sections/Partners';
+import Roadmap from './Sections/Roadmap';
+import Tokenomics from './Sections/Tokenomics';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <Hero />
+      <Features />
+      <Dapp />
+      <Blockchain />
+      <Chart />
+      <Media />
+      <Ecosystem />
+      <Roadmap />
+      <Tokenomics />
+      <Partners />
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,88 @@
+.hero{
+    background: url(../Assets/Images/herobg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 9rem;
+    padding-bottom: 2rem;
+}
+.hero_title{
+    color: #FFF;
+    padding: 1rem 0;
+    font-weight: 800;
+    font-size: 2.8rem;
+    text-transform: capitalize;
+}
+.hero_subtitle{
+    color: #FFF;
+    font-weight: 400;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 1rem 0;
+    line-height: 1.6;
+}
+
+.hero_wrap{
+    padding: 3rem 0;
+    padding-bottom: 0;
+}
+.hero_wrap .button_wrap{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0.8rem;
+}
+.hero_wrap .gap_wrap{
+    gap: 3rem;
+    padding: 1rem;
+}
+.hero_wrap > p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.button_wrap > button{
+    background: linear-gradient(261.78deg, #14F195 -1.89%, #9945FF 99.57%);
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 1.2rem 2.2rem;
+}
+.button_wrap > button:nth-child(2){
+    background: none;
+    border: 2px solid #FFF;
+}
+.hero p:last-child{
+    font-size: 18px;
+    padding: 2rem;
+}
+.hero p > span{
+    font-weight: 700;
+    text-transform: uppercase;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
+    linear-gradient(261.78deg, #14F195 -1.89%, #9945FF 99.57%);
+    border-radius: 2px;
+    padding-bottom: 0.2rem;
+    border-bottom: 4px solid transparent;
+}
+
+/* Responsiveness */
+
+@media (max-width: 875px) {
+    .hero_title{
+        font-size: 1.8rem;
+        line-height: 38px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero{
+        background-image: none;
+    }
+    .hero_title{
+        font-size: 1.7rem;
+        line-height: 38px;
+        font-weight: 600;
+    }
+    .hero_subtitle{
+        font-size: 16px;
+    }
+}

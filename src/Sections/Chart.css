@@ -1,0 +1,56 @@
+.chart_c{
+    padding: 0rem 5%;
+    padding-bottom: 4rem;
+}
+
+.charts{
+    display: flex;
+    padding: 2rem 0;
+    margin: 0 auto;
+    flex: 0 0 600px;
+    overflow-x: scroll;
+}
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    background: #fff3;
+    -webkit-border-radius: 1ex;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #14F195;
+    -webkit-border-radius: 1ex;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: #fff3;
+  }
+.chart_item{
+    flex: 0 0 160px;
+    margin: 0 20px 0 0;
+    /* min-width: 8rem; */
+}
+.chart_item:last-of-type {
+    margin: 0;
+  }
+.chart_item:nth-child(1){
+    text-align: left;
+}
+.chart_item:nth-child(2){
+    padding: 1rem 2rem;
+    background: #14F195;
+    border-radius: 10px;
+}
+.chart_item:nth-child(2) > p{
+    color: #0A1B30;
+}
+.chart_item > p{
+    font-size: 15px;
+    padding: 1rem 0;
+    height: 3rem;
+}
+.chart_item > .chart_head{
+    font-size: 18px !important;
+    font-weight: 500;
+    padding: 0.5rem 0;
+}

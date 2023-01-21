@@ -1,0 +1,42 @@
+.roadmap{
+    display: flex;
+    flex: 0 0 400px;
+    gap: 2rem;
+}
+
+.map_wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    /* gap: 1rem; */
+}
+.map_wrap > p{
+    padding: 2rem 0;
+}
+.map_wrap > img{
+    max-width: 50px;
+}
+
+.map_container{
+    background: #232325;
+    border: 0.7px solid rgba(191, 205, 255, 0.5);
+    border-radius: 15px;
+    color: #FFF;
+    padding: 1rem;
+    text-align: left;
+    min-width: 20rem;
+    min-height: 15rem;
+}
+.map_container ul > li{
+    font-weight: 300;
+    font-size: 15px;
+    padding: 0.2rem 0;
+    list-style-position: inside;
+    font-size: 15px;
+}
+.map_container > p:nth-child(1){
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 0.6rem;
+}

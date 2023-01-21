@@ -1,0 +1,108 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    position: fixed;
+    width: 100%;
+    background: #000;
+    box-shadow: 0px 5px 3px -4px #14f19560;
+    -webkit-box-shadow: 0px 5px 3px -4px #14f19536;
+    -moz-box-shadow: 0px 5px 3px -4px #14f19560;
+    z-index: 10;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    z-index: 3;
+}
+
+header nav ul li, a{
+    text-decoration: none;
+    list-style: none;
+    color: #FFF;
+}
+
+header button {
+    padding: 0.8rem 2.2rem;
+    background: linear-gradient(261.78deg, #14F195 -1.89%, #9945FF 99.57%);
+    border-radius: 10px;
+}
+
+header > a > img:nth-child(2){
+    display: none;
+}
+
+.menu_btn{
+    display: none;
+}
+.wrap_toggle{
+    display: flex;
+}
+.socials{
+    display: none;
+}
+
+/* Other Devices */
+
+@media (max-width: 1145px) {
+    header nav ul{
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    header nav ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 60vw;
+        display: flex;
+        padding: 2rem;
+        padding-top: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2.4rem;
+        background: linear-gradient(261.78deg, #14F195 -1.89%, #9945FF 99.57%);
+        background: rgba(0, 0, 0, 0.927);
+        box-shadow: 0px 5px 3px -1px rgba(57, 56, 56, 0.75);
+        -webkit-box-shadow: 0px 5px 3px -1px rgba(45, 45, 45, 0.75);
+        -moz-box-shadow: 0px 5px 3px -1px rgba(61, 59, 59, 0.75);
+        border-radius: 10px;
+        border-right: 1px solid #14f19531;
+        transition: 1s;
+        transform: translateX(-100vw);
+        z-index: -1;
+    }
+    header nav ul li, .nav_a{
+        text-align: left;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #FFF;
+    }
+    .res_nav{
+        transform: none;
+    }
+    .menu_btn{
+        display: block;
+    }
+    header > a > img:nth-child(1){
+        display: none;
+    }
+    header > a > img:nth-child(2){
+        display: block;
+    }
+    .socials{
+        width: 100%;
+        margin-top: 4rem;
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        border-top: 1px solid #14F195;
+    }
+}

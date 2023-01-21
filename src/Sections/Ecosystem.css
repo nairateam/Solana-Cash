@@ -1,0 +1,109 @@
+.ecosystem{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.core_item{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 2rem;
+    width: 45%;
+    border-radius: 10px;
+    text-align: left;
+    padding: 2rem;
+}
+.core_item > p:nth-child(1){
+    color: #0A1B30;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+}
+.core_item > span > p{
+    color: #0A1B30;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 1rem;
+}
+.core_item > span > button{
+    padding: 0.8rem 2rem;
+    background: #0A1B30;
+    border-radius: 30px;
+}
+.core_item:nth-child(1){
+    background: #14F195;
+}
+.core_item:nth-child(2){
+    background: #93BEDF;
+}
+.core_item:nth-child(3){
+    background: #D99AC5;
+}
+.core_item:nth-child(4){
+    background: #99B6FD;
+}
+.core_item:nth-child(5){
+    flex-direction: row;
+    width: 92%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background: #14C9F1;
+}
+
+@media (max-width: 790px) {
+    .ecosystem{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding: 2rem 0rem;
+    }
+    .core_item{
+        width: 15rem;
+        gap: 1rem;
+        padding: 2rem;
+    }
+    .core_item > p:nth-child(1){
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .core_item > span > p{
+        font-size: 15px;
+    }
+    .core_item:nth-child(5){
+        width: 31rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .ecosystem{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding: 2rem 0rem;
+    }
+    .core_item{
+        width: 95%;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .core_item > p:nth-child(1){
+        font-size: 30px;
+        line-height: 32px;
+    }
+    .core_item > span > p{
+        font-size: 15px;
+    }
+    .core_item:nth-child(5){
+        width: 95%;
+        gap: 1rem;
+        align-items: flex-start;
+        padding: 1rem;
+        flex-direction: column;
+    }
+}
