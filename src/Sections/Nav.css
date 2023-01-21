@@ -31,6 +31,10 @@ header button {
     border-radius: 10px;
 }
 
+header > a > img:nth-child(1){
+    max-width: 150px;
+}
+
 header > a > img:nth-child(2){
     display: none;
 }
@@ -95,6 +99,7 @@ header > a > img:nth-child(2){
     }
     header > a > img:nth-child(2){
         display: block;
+        max-width: 30px;
     }
     .socials{
         width: 100%;
